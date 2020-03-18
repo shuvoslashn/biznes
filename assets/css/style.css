@@ -6,4 +6,256 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #888888;
 }
+
+h2 {
+    font-size: 30;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*
+==================================== 
+    Common CSS
+====================================
+*/
+.our-btn {
+    background: #fff;
+    padding: 13px 35px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    box-shadow: 3px 5px 14px 0 #0005;
+    margin: 0px 12px;
+    width: 180px;
+}
+
+.our-btn:hover {
+    box-shadow: 0 0 20px 0 #ffffff71;
+}
+
+.our-btn.active {
+    background: #438bff;
+    color: #fff;
+}
+
+.our-btn.active:hover {
+    box-shadow: 0 0 20px 0 rgba(67, 139, 255, 0.534);
+}
+
+.sec-title {
+    text-align: center;
+}
+
+.sec-title p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.sec-title h2 {
+    padding-bottom: 15px;
+}
+
+.sec-title h2 span {
+    color: #438bff;
+}
+
+.bottom-style {
+    position: relative;
+    width: 60px;
+    background: #438bff;
+    border-radius: 30px;
+    height: 5px;
+    margin: auto;
+}
+
+.bottom-style:after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    border-radius: 30px;
+    background: #ddd;
+    height: 1px;
+    top: 2px;
+    z-index: -9;
+}
+
+/*
+==================================== 
+    Header CSS Start
+====================================
+*/
+/* Top Bar CSS */
+.top-bar {
+    background-color: #343434;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-left ul,
+.top-right ul {
+    display: flex;
+}
+
+.top-left ul li,
+.top-right ul li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.top-left ul li {
+    margin-right: 25px;
+}
+
+.top-left ul li i {
+    margin-right: 5px;
+}
+
+.top-right ul li {
+    margin-left: 15px;
+}
+
+.top-right ul li a {
+    color: #7D7D7D;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.top-right ul li a:hover {
+    color: #fff;
+}
+
+/* Menu Area CSS */
+.navbar-nav {
+    padding: 25px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    padding: 0 17px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: 0;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #438bff;
+}
+
+/*
+==================================== 
+    Header CSS End
+====================================
+*/
+/*
+==================================== 
+    Slider Area CSS Start
+====================================
+*/
+.slider-item {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    height: 85vh;
+    position: relative;
+}
+
+.slider-item::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/pattern.png');
+    background-size: 5%;
+}
+
+.slider-content {
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.slider-content>* {
+    color: #fff;
+}
+
+.slider-content p.lead {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.slider-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.slider-content p {
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 35px;
+    line-height: 1.6;
+}
+
+/*
+==================================== 
+    Slider Area CSS End
+====================================
+*/
