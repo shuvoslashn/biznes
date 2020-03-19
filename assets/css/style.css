@@ -55,6 +55,15 @@ a:hover {
     Common CSS
 ====================================
 */
+
+.theme-color {
+    color: #438bff;
+}
+
+.theme-bg {
+    background: #438bff;
+}
+
 .our-btn {
     background: #fff;
     padding: 13px 35px;
@@ -62,12 +71,13 @@ a:hover {
     text-transform: uppercase;
     display: inline-block;
     box-shadow: 3px 5px 14px 0 #0005;
-    margin: 0px 12px;
+    margin: 0px 15px;
     width: 180px;
+    font-weight: 600;
 }
 
 .our-btn:hover {
-    box-shadow: 0 0 20px 0 #ffffff71;
+    box-shadow: 0px 3px 20px 0 #ffffff55;
 }
 
 .our-btn.active {
@@ -76,7 +86,7 @@ a:hover {
 }
 
 .our-btn.active:hover {
-    box-shadow: 0 0 20px 0 rgba(67, 139, 255, 0.534);
+    box-shadow: 0 3px 20px 0 rgba(67, 139, 255, 0.534);
 }
 
 .sec-title {
@@ -198,11 +208,16 @@ a:hover {
     Slider Area CSS Start
 ====================================
 */
+.slider {
+    position: relative;
+    background: #000;
+}
+
 .slider-item {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    height: 85vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -214,7 +229,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/pattern.png');
-    background-size: 5%;
+    background-size: 6%;
 }
 
 .slider-content {
@@ -244,7 +259,7 @@ a:hover {
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
 }
 
 .slider-content p {
@@ -254,8 +269,98 @@ a:hover {
     line-height: 1.6;
 }
 
+/* bullet Style */
+.our-bullet {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.our-bullet li {
+    width: 8px !important;
+    height: 8px !important;
+    background: #eee;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.our-bullet li.active {
+    background: #438bff;
+    border: 2px solid #fff;
+}
+
+.carousel-indicators li {
+    border: 2px solid #fff;
+    background: #fff;
+    opacity: 0.9;
+}
+
+/* Slider Arrow */
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: 30px;
+}
+
+.right-arrow {
+    right: 30px;
+}
+
+.left-arrow a,
+.right-arrow a {
+    color: #fff;
+    font-size: 40px;
+}
+
+.left-arrow a:hover,
+.right-arrow a:hover {
+    color: #438bff;
+}
+
 /*
 ==================================== 
     Slider Area CSS End
+====================================
+*/
+
+/*
+==================================== 
+    About Area CSS Start
+====================================
+*/
+.about-img {
+    background: #438bff;
+}
+
+.about-img img {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    box-shadow: 0 0 20px 0 #dddddd55;
+}
+
+/*
+==================================== 
+    About Area CSS End
 ====================================
 */
