@@ -177,7 +177,10 @@
     
     .slider-content {
         width: 70%;
-        left: 47%;
+    }
+    
+    .slider-arrow {
+        display: none;
     }
 
 }
