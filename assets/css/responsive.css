@@ -165,5 +165,9 @@
         width: 100%;
         margin-left: -5%;
     }
+    
+    .team-details {
+        padding: 50px;
+    }
 
 }
