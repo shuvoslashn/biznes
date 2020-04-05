@@ -169,5 +169,10 @@
     .team-details {
         padding: 50px;
     }
+    
+    .single-client.item {
+        max-width: 150px;
+        margin: auto;
+    }
 
 }
