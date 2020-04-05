@@ -50,22 +50,51 @@ a:hover {
     text-decoration: none;
 }
 
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ptb-100-70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
 /*
 ==================================== 
     Common CSS
 ====================================
 */
 
+/* Default Color Setting */
+/* color: #438bff; */
+:root {
+    --theme-color: tomato;
+    --section-color-alt: #EDEDED;
+}
+
 .theme-color {
-    color: #438bff;
+    color: var(--theme-color) !important;
 }
 
 .theme-bg {
-    background: #438bff;
+    background: var(--theme-color) !important;
+    color: #fff !important;
 }
 
+.theme-bg-alt {
+    color: var(--theme-color) !important;
+    background: #fff !important;
+}
+
+.section-color-alt {
+    background-color: var(--section-color-alt);
+}
+
+
+/* Default Color Setting End */
+
 .our-btn {
-    background: #fff;
     padding: 13px 35px;
     border-radius: 30px;
     text-transform: uppercase;
@@ -74,23 +103,20 @@ a:hover {
     margin: 0px 15px;
     width: 180px;
     font-weight: 600;
+    text-align: center;
 }
 
 .our-btn:hover {
-    box-shadow: 0px 3px 20px 0 #ffffff55;
+    box-shadow: 3px 3px 20px 0 #ffffff55;
 }
 
-.our-btn.active {
-    background: #438bff;
-    color: #fff;
-}
-
-.our-btn.active:hover {
-    box-shadow: 0 3px 20px 0 rgba(67, 139, 255, 0.534);
+.our-btn.nxt:hover {
+    box-shadow: 0 0 10px 0 #44444455;
 }
 
 .sec-title {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .sec-title p {
@@ -109,7 +135,6 @@ a:hover {
 .bottom-style {
     position: relative;
     width: 60px;
-    background: #438bff;
     border-radius: 30px;
     height: 5px;
     margin: auto;
@@ -195,7 +220,7 @@ a:hover {
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
-    color: #438bff;
+    color: var(--theme-color);
 }
 
 /*
@@ -295,7 +320,7 @@ a:hover {
 }
 
 .our-bullet li.active {
-    background: #438bff;
+    background: #444;
     border: 2px solid #fff;
 }
 
@@ -332,11 +357,6 @@ a:hover {
     font-size: 40px;
 }
 
-.left-arrow a:hover,
-.right-arrow a:hover {
-    color: #438bff;
-}
-
 /*
 ==================================== 
     Slider Area CSS End
@@ -348,19 +368,145 @@ a:hover {
     About Area CSS Start
 ====================================
 */
+.about {
+    padding-bottom: 40px;
+}
+
 .about-img {
-    background: #438bff;
+    margin-top: -100px;
 }
 
 .about-img img {
     position: relative;
     top: 40px;
     left: 40px;
-    box-shadow: 0 0 20px 0 #dddddd55;
+}
+
+.about-content {
+    height: calc(100% + 40px);
+    position: relative;
+    margin-left: 70px;
+}
+
+.about-content .sec-title {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.about-content .about-text {
+    padding-bottom: 20px;
+}
+
+.about-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.about-content-inner .our-btn {
+    margin-top: 20px;
+}
+
+.about-btn {
+    padding-top: 20px;
 }
 
 /*
 ==================================== 
     About Area CSS End
+====================================
+*/
+
+/*
+==================================== 
+    We Do Area CSS Start
+====================================
+*/
+.we-do {
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.we-do-content {
+    padding-bottom: 50px;
+}
+
+.do-part {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.do-part:hover i {
+    color: var(--theme-color);
+    transform: scale(1.2) rotate(-5deg);
+    -webkit-transform: scale(1.2) rotate(-5deg);
+    -moz-transform: scale(1.2) rotate(-5deg);
+    -ms-transform: scale(1.2) rotate(-5deg);
+    -o-transform: scale(1.2) rotate(-5deg);
+}
+
+.do-part:hover h4 {
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.do-part i {
+    font-size: 40px;
+    color: #444;
+    padding-bottom: 20px;
+    display: inline-block;
+
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.do-part h4 {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.do-part h4::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #888888;
+}
+
+.we-do-img {
+    background: url(../images/dotdot.png);
+    background-size: 15%;
+    background-position: 72% 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px 0 #ccc;
+    background-attachment: fixed;
+}
+
+.we-do-img img {
+    position: relative;
+    top: 150px;
+    left: 40px;
+}
+
+/*
+==================================== 
+    We Do Area CSS End
 ====================================
 */
