@@ -174,5 +174,10 @@
         max-width: 150px;
         margin: auto;
     }
+    
+    .slider-content {
+        width: 70%;
+        left: 47%;
+    }
 
 }
