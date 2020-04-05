@@ -9,19 +9,26 @@
         <!-- Google Font (Poppins) -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
             rel="stylesheet">
+        <!-- FancyBox CSS -->
+        <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
         <!-- Ico-Font CSS -->
         <link rel="stylesheet" href="assets/css/icofont.min.css">
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="assets/css/responsive.css">
 
         <title>Biznes || Design By webshuvomy6</title>
     </head>
 
     <body>
         <!-- Header Area Start -->
-        <header class="header">
+        <header class="header" id="home">
             <!-- Top Bar Start -->
             <div class="top-bar">
                 <div class="container">
@@ -60,7 +67,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <div class="container">
                         <!-- Logo Here -->
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="#home">
                             <div class="logo h2 text-uppercase font-weight-bold theme-color">
                                 <i class="icofont-tie"></i>orate
                             </div>
@@ -77,26 +84,33 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home</a>
+                                    <a class="nav-link" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">DEMOS</a>
+                                    <a class="nav-link" href="#about">about</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Portfolio</a>
+                                    <a class="nav-link" href="#wedo">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="#work">Portfolio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">SHORTCODES</a>
+                                    <a class="nav-link" href="#team">Team</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#blog">Blog</a>
                                 </li>
                             </ul>
-                            <span class="d-inline-block my-2 my-lg-0">
-                                <a href="#" class="theme-color"><i class="icofont-search-1"></i></a>
+                            <span class="main-search-box d-inline-block my-2 my-lg-0">
+                                <i class="icofont-search-1 theme-color search-icon"></i>
+                                <form action="" class="searchBox search-design">
+                                    <div class="search-div">
+                                        <input type="text" name="search" id="search" placeholder="Search Here">
+                                        <input type="submit" value="Search" class="theme-bg search-btn">
+                                    </div>
+                                </form>
                             </span>
                         </div>
                     </div>
@@ -121,9 +135,9 @@
                                 to come) packed with functionality and styling options that allow countless variations
                                 to be
                                 made easily and without any coding.</p>
-                            <div class="btn-group">
-                                <a href="#" class="our-btn active theme-bg">Discover Now</a>
-                                <a href="#" class="our-btn theme-bg-alt">Contact Us</a>
+                            <div class="group-btn">
+                                <a href="#about" class="our-btn active theme-bg">Discover Now</a>
+                                <a href="#wedo" class="our-btn theme-bg-alt">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -139,9 +153,9 @@
                                 to come) packed with functionality and styling options that allow countless variations
                                 to be
                                 made easily and without any coding.</p>
-                            <div class="btn-group">
-                                <a href="#" class="our-btn active theme-bg">Discover Now</a>
-                                <a href="#" class="our-btn theme-bg-alt">Contact Us</a>
+                            <div class="group-btn">
+                                <a href="#about" class="our-btn active theme-bg">Discover Now</a>
+                                <a href="#wedo" class="our-btn theme-bg-alt">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -157,9 +171,9 @@
                                 to come) packed with functionality and styling options that allow countless variations
                                 to be
                                 made easily and without any coding.</p>
-                            <div class="btn-group">
-                                <a href="#" class="our-btn active theme-bg">Discover Now</a>
-                                <a href="#" class="our-btn theme-bg-alt">Contact Us</a>
+                            <div class="group-btn">
+                                <a href="#about" class="our-btn active theme-bg">Discover Now</a>
+                                <a href="#wedo" class="our-btn theme-bg-alt">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -195,7 +209,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <!-- About Image Start -->
-                        <div class="about-img theme-bg">
+                        <div class="about-img theme-bg" id="about">
                             <img src="assets/images/about.png" alt="Business Man" class="img-fluid">
                         </div>
                         <!-- About Image End -->
@@ -223,7 +237,7 @@
                                 <!-- About Text End -->
                                 <!-- About Btn -->
                                 <div class="about-btn">
-                                    <a href="#" class="our-btn nxt m-0 theme-bg-alt">Learn More</a>
+                                    <a href="#work" class="our-btn nxt m-0 theme-bg-alt">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -235,7 +249,7 @@
         <!-- About Area End -->
 
         <!-- We do Area Start -->
-        <section class="we-do section-color-alt ptb-100-70">
+        <section class="we-do section-color-alt ptb-100-70" id="wedo">
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
@@ -302,46 +316,665 @@
         <!-- We do Area End -->
 
         <!-- Work Area Start -->
-        <section class="work-area ptb-100">
+        <section class="work-area ptb-100" id="work">
             <div class="container">
                 <div class="sec-title">
                     <p>Proudly Displaying Projects</p>
                     <h2>Recent <span class="theme-color">Work</span></h2>
                     <div class="bottom-style theme-bg"></div>
                 </div>
+                <div class="work-nav">
+                    <ul>
+                        <li mixit-control data-filter="all" class="mixitup-control-active">All</li>
+                        <li mixit-control data-filter=".web-design">Website Design</li>
+                        <li mixit-control data-filter=".graphic-design">Graphic Design</li>
+                        <li mixit-control data-filter=".branding">Branding</li>
+                        <li mixit-control data-filter=".development">Web Development</li>
+                        <li mixit-control data-filter=".photography">Photography</li>
+                    </ul>
+                </div>
+
+                <!-- Work Gallery Start -->
+                <div class="work-gallery">
+                    <div class="row gallery">
+
+                        <!-- item 01 -->
+                        <div class="col-md-4 mix branding photography">
+                            <div class="work-item">
+                                <img src="assets/images/product-1.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-1.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-1.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 02 -->
+                        <div class="col-md-4 mix graphic-design development photography">
+                            <div class="work-item">
+                                <img src="assets/images/product-2.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-2.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-2.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 03 -->
+                        <div class="col-md-4 mix web-design branding">
+                            <div class="work-item">
+                                <img src="assets/images/product-3.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-3.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-3.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 04 -->
+                        <div class="col-md-4 mix graphic-design development photography">
+                            <div class="work-item">
+                                <img src="assets/images/product-4.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-4.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-4.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 05 -->
+                        <div class="col-md-4 mix web-design branding photography+">
+                            <div class="work-item">
+                                <img src="assets/images/product-5.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-5.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-5.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- item 06 -->
+                        <div class="col-md-4 mix web-design graphic-design development">
+                            <div class="work-item">
+                                <img src="assets/images/product-6.jpg" alt="" class="img-fluid">
+                                <a href="assets/images/product-6.jpg" data-fancybox="items">
+                                    <i class="icofont-eye-alt"></i>
+                                    <img class="hidden-image" src="assets/images/product-6.jpg" alt="hidden-images">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Gallery End -->
             </div>
         </section>
         <!-- Work Area End -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- Section Title Start -->
-        <div class="pt-5 border-top"></div>
-        <div class="pt-5"></div>
-        <div class="py-5">
-            <div class="sec-title">
-                <p>Proudly Displaying Projects</p>
-                <h2>Recent <span class="theme-color">Work</span></h2>
-                <div class="bottom-style theme-bg"></div>
+        <!-- Tab Area Start -->
+        <section class="tab-area" id="tab">
+            <div class="tab-list">
+                <div class="container">
+                    <ul class="nav our-nav-item">
+                        <li><a href="#tab-content1" data-toggle="tab" class="active"><i
+                                    class="icofont-chart-growth"></i>Core Value</a>
+                        </li>
+                        <li><a href="#tab-content2" data-toggle="tab"><i class="icofont-refresh"></i>Our Features</a>
+                        </li>
+                        <li><a href="#tab-content3" data-toggle="tab"><i class="icofont-history"></i>Company History</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="tab-content-area py-5">
+                <div class="container tab-content">
+                    <!-- Tab 01 Start -->
+                    <div class="tab-pane fade show active" id="tab-content1">
+                        <div class="row">
+                            <div class="col-md-7 d-flex align-items-center">
+                                <div class="tab-content-text">
+                                    <h2>Start your Business Today</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro,
+                                        everti
+                                        animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis
+                                        adipiscing, at
+                                        probo liber prompta eam, eam putant tritani ea.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="tab-img">
+                                    <img src="assets/images/shoe-1.jpg" alt="50% Off" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 01 End -->
+
+                    <!-- Tab 02 Start -->
+                    <div class="tab-pane fade" id="tab-content2">
+                        <div class="row">
+                            <div class="col-md-7 d-flex align-items-center">
+                                <div class="tab-content-text">
+                                    <h2>Start your Business Today</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro,
+                                        everti
+                                        animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis
+                                        adipiscing, at
+                                        probo liber prompta eam, eam putant tritani ea.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="tab-img">
+                                    <img src="assets/images/shoe-2.jpg" alt="50% Off" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 02 End -->
+
+                    <!-- Tab 03 Start -->
+                    <div class="tab-pane fade" id="tab-content3">
+                        <div class="row">
+                            <div class="col-md-7 d-flex align-items-center">
+                                <div class="tab-content-text">
+                                    <h2>Start your Business Today</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam. Errem dictas te pro,
+                                        everti
+                                        animal accumsan eum an, pri gloriatur adversarium ex. His ea singulis
+                                        adipiscing, at
+                                        probo liber prompta eam, eam putant tritani ea.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, in exerci interpretaris signiferumque nam, simul
+                                        clita
+                                        mediocrem ea sit. Legere euismod usu cu, everti officiis in pri, impetus
+                                        placerat eu
+                                        est. Choro diceret fuisset ex eam. Quo at illud conceptam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-center">
+                                <div class="tab-img">
+                                    <img src="assets/images/shoe-3.jpg" alt="50% Off" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 03 End -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Tab Area End -->
+
+        <!-- Ribon Area Start -->
+        <section class="ribon-area ptb-100" id="ribon">
+            <h1>HAVE YOU FALL IN LOVE WITH THIS THEME YET?</h1>
+            <a href="#blog" class="our-btn theme-bg">DISCOVER WHAT LUXURY TRULY MEANS</a>
+        </section>
+        <!-- Ribon Area End -->
+
+        <!-- Team Area Start -->
+        <section class="team-area ptb-100-70" id="team">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="sec-title">
+                    <p>GET TO KNOW OUR</p>
+                    <h2>Team <span class="theme-color">Members</span></h2>
+                    <div class="bottom-style theme-bg"></div>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Team Members Start -->
+                <div class="team-members team-carousel owl-carousel owl-theme">
+
+                    <!-- Team Member 01 Start -->
+                    <div class="item">
+                        <!-- Single Team Member Start -->
+                        <div class="single-team-member">
+                            <!-- Team Member Image -->
+                            <img class="img-fluid" src="assets/images/man0.jpg" alt="Team Member">
+
+                            <!-- About Team Member Start -->
+                            <div class="about-team-member">
+                                <!-- Team Member Details -->
+                                <div class="team-details">
+                                    <h4>Cristina Angel</h4>
+                                    <p class="lead">Product Manager</p>
+                                    <p>Neque porro quisqqui dolorem ipsum doamet, consectetur adipis civelit
+                                        quianon.
+                                    </p>
+                                </div>
+
+                                <!-- Team Member Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Team Member End -->
+                        </div>
+                        <!-- Single Team Member End -->
+                    </div>
+                    <!-- Team Member 01 End -->
+
+                    <!-- Team Member 02 Start -->
+                    <div class="item">
+                        <!-- Single Team Member Start -->
+                        <div class="single-team-member">
+                            <!-- Team Member Image -->
+                            <img class="img-fluid" src="assets/images/man1.jpg" alt="Team Member">
+
+                            <!-- About Team Member Start -->
+                            <div class="about-team-member">
+                                <!-- Team Member Details -->
+                                <div class="team-details">
+                                    <h4>Cristina Angel</h4>
+                                    <p class="lead">Product Manager</p>
+                                    <p>Neque porro quisqqui dolorem ipsum doamet, consectetur adipis civelit
+                                        quianon.
+                                    </p>
+                                </div>
+
+                                <!-- Team Member Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Team Member End -->
+                        </div>
+                        <!-- Single Team Member End -->
+                    </div>
+                    <!-- Team Member 02 End -->
+
+                    <!-- Team Member 03 Start -->
+                    <div class="item">
+                        <!-- Single Team Member Start -->
+                        <div class="single-team-member">
+                            <!-- Team Member Image -->
+                            <img class="img-fluid" src="assets/images/man2.jpg" alt="Team Member">
+
+                            <!-- About Team Member Start -->
+                            <div class="about-team-member">
+                                <!-- Team Member Details -->
+                                <div class="team-details">
+                                    <h4>Cristina Angel</h4>
+                                    <p class="lead">Product Manager</p>
+                                    <p>Neque porro quisqqui dolorem ipsum doamet, consectetur adipis civelit
+                                        quianon.
+                                    </p>
+                                </div>
+
+                                <!-- Team Member Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Team Member End -->
+                        </div>
+                        <!-- Single Team Member End -->
+                    </div>
+                    <!-- Team Member 03 End -->
+
+                    <!-- Team Member 04 Start -->
+                    <div class="item">
+                        <!-- Single Team Member Start -->
+                        <div class="single-team-member">
+                            <!-- Team Member Image -->
+                            <img class="img-fluid" src="assets/images/man3.jpg" alt="Team Member">
+
+                            <!-- About Team Member Start -->
+                            <div class="about-team-member">
+                                <!-- Team Member Details -->
+                                <div class="team-details">
+                                    <h4>Cristina Angel</h4>
+                                    <p class="lead">Product Manager</p>
+                                    <p>Neque porro quisqqui dolorem ipsum doamet, consectetur adipis civelit
+                                        quianon.
+                                    </p>
+                                </div>
+
+                                <!-- Team Member Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Team Member End -->
+                        </div>
+                        <!-- Single Team Member End -->
+                    </div>
+                    <!-- Team Member 04 End -->
+
+                    <!-- Team Member 05 Start -->
+                    <div class="item">
+                        <!-- Single Team Member Start -->
+                        <div class="single-team-member">
+                            <!-- Team Member Image -->
+                            <img class="img-fluid" src="assets/images/man4.jpg" alt="Team Member">
+
+                            <!-- About Team Member Start -->
+                            <div class="about-team-member">
+                                <!-- Team Member Details -->
+                                <div class="team-details">
+                                    <h4>Cristina Angel</h4>
+                                    <p class="lead">Product Manager</p>
+                                    <p>Neque porro quisqqui dolorem ipsum doamet, consectetur adipis civelit
+                                        quianon.
+                                    </p>
+                                </div>
+
+                                <!-- Team Member Social -->
+                                <div class="team-social">
+                                    <ul>
+                                        <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                        <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- About Team Member End -->
+                        </div>
+                        <!-- Single Team Member End -->
+                    </div>
+                    <!-- Team Member 05 End -->
+                </div>
+                <!-- Team Members End -->
+            </div>
+        </section>
+        <!-- Team Area End -->
+
+        <!-- Blog Area Start -->
+        <section class="blog-area ptb-100-70" id="blog">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="sec-title">
+                    <p>Proudly Displaying Projects</p>
+                    <h2>Our <span class="theme-color">Blog</span></h2>
+                    <div class="bottom-style theme-bg"></div>
+                </div>
+                <!-- Section Title End -->
+
+                <div class="blog-content-area">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <!-- Big Post Start -->
+                            <div class="big-post-area">
+                                <div class="big-post">
+                                    <!-- Post Image -->
+                                    <a href="#"><img class="img-fluid" src="assets/images/blog01.jpg"
+                                            alt="Blog Posts"></a>
+                                    <div class="date-month">
+                                        <div class="date">29</div>
+                                        <div class="month">Mar</div>
+                                    </div>
+                                </div>
+                                <div class="big-post-content">
+                                    <a href="#">
+                                        <h2>Amazing Blog Title Here</h2>
+                                    </a>
+                                    <p class="author">By : <a href="#">themeExp</a></p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis porro
+                                        commodi
+                                        fugit minima unde molestiae, reprehenderit dignissimos beatae laudantium
+                                        consequuntur aliquam quaerat facere modi. Consequatur recusandae itaque in quo
+                                        corporis? <a href="#" class="ml-2"> [ . . . ]</a></p>
+                                </div>
+                            </div>
+                            <!-- Big Post End -->
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <!-- Small Post 01 Strat -->
+                            <div class="small-post">
+                                <a href="#"><img src="assets/images/blog02.jpg" alt="Blog Posts" class="img-fluid"></a>
+                                <div class="small-post-contents">
+                                    <a href="#">
+                                        <h4>Amazing Blog Title Here</h4>
+                                    </a>
+                                    <p class="author">By : <a href="#">Shuvo Sarker</a></p>
+                                </div>
+                            </div>
+                            <!-- Small Post 01 End -->
+
+                            <!-- Small Post 02 Strat -->
+                            <div class="small-post">
+                                <a href="#"><img src="assets/images/blog03.jpg" alt="Blog Posts" class="img-fluid"></a>
+                                <div class="small-post-contents">
+                                    <a href="#">
+                                        <h4>Amazing Blog Title Here</h4>
+                                    </a>
+                                    <p class="author">By : <a href="#">Shuvo Sarker</a></p>
+                                </div>
+                            </div>
+                            <!-- Small Post 02 End -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area End -->
+
+        <!-- Client Area Start -->
+        <section class="client-area ptb-100" id="clients">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="sec-title">
+                    <p>You Can See about</p>
+                    <h2>our <span class="theme-color">Clients</span></h2>
+                    <div class="bottom-style theme-bg"></div>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Client Carousel Strat -->
+                <div class="client-carousel owl-carousel owl-theme">
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-1.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-2.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-3.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-4.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-5.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-3.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-1.png" alt="Our Clients" class="img-fluid">
+                    </div>
+
+                    <div class="single-client item">
+                        <img src="assets/images/client-logo-4.png" alt="Our Clients" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Client Carousel End -->
+            </div>
+        </section>
+        <!-- Client Area End -->
+
+        <!-- Footer Area Start -->
+        <footer class="footer-area">
+            <!-- Footer Top Area Start -->
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widget widget-one">
+                                <div class="widget-center">
+                                    <div class="widget-logo">
+                                        <div class="logo h2 text-uppercase font-weight-bold text-white">
+                                            <i class="icofont-tie"></i>orate
+                                        </div>
+                                    </div>
+                                    <div class="widget-social">
+                                        <ul>
+                                            <li><a href="#"> <i class="icofont-facebook"></i> </a></li>
+                                            <li><a href="#"> <i class="icofont-twitter"></i> </a></li>
+                                            <li><a href="#"> <i class="icofont-linkedin"></i> </a></li>
+                                            <li><a href="#"> <i class="icofont-skype"></i> </a></li>
+                                            <li><a href="#"> <i class="icofont-pinterest"></i> </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h5>Contact</h5>
+                                </div>
+                                <div class="widget-content">
+                                    <address>
+                                        72 Royal Street, California USA <br>
+                                        001-002-003-555 <br>
+                                        contact@domain.com <br>
+                                        E-Mail: abcd@email.com
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h5>Latest Tweets</h5>
+                                </div>
+                                <div class="widget-content">
+                                    <div class="row pb-3">
+                                        <div class="col-2"><i class="icofont-twitter"></i></div>
+                                        <div class="col-10 px-0">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            In
+                                            dolores blanditiis</div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-2"><i class="icofont-twitter"></i></div>
+                                        <div class="col-10 px-0">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit.
+                                            In
+                                            dolores blanditiis</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h5>Subscribe Now</h5>
+                                </div>
+                                <div class="widget-content">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+                                    <div class="subscribe-box">
+                                        <input type="text" class="form-control" placeholder="Email Address">
+                                        <button type="submit"><i class="icofont-location-arrow"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Top Area End -->
+
+            <!-- Footer Bottom Area Start -->
+            <div class="footer-bottom dark-bg">
+                <p>&copy; 2018 All Rights Reserved. Theme Design by <a href="#">ThemeShuvom</a></p>
+            </div>
+            <!-- Footer Bottom Area End -->
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+        <!-- Back to top Button Start -->
+        <div class="top">
+            <a href="#"><i class="icofont-rounded-up"></i></a>
         </div>
-        <!-- Section Title End -->
+        <!-- Back to top Button End -->
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="assets/js/jquery-3.4.1.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Mixitup Js -->
+        <script src="assets/js/mixitup.min.js"></script>
+        <!-- FancyBox Js -->
+        <script src="assets/js/jquery.fancybox.min.js"></script>
+        <!-- FancyBox Js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
 
         <!-- Custom JS -->
         <script src="assets/js/custom.js"></script>

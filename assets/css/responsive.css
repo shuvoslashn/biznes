@@ -1,0 +1,169 @@
+@media (max-width: 991px) {
+    .top-content {
+        display: block;
+    }
+
+    .top-left ul,
+    .top-right ul {
+        display: flex;
+        border-radius: 30px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .top-left ul {
+        display: block;
+    }
+
+    .top-left ul li {
+        padding: 5px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .slider-content p.lead {
+        font-size: 14px;
+    }
+
+    .slider-content h1 {
+        font-size: 30px;
+    }
+
+    .about {
+        padding-top: 50px;
+    }
+
+    .about-img {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .our-btn {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .about-img img {
+        position: unset;
+        top: 0;
+        left: 0;
+    }
+
+    .about-content {
+        margin-left: 0px;
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .about-content-inner {
+        position: unset;
+        top: 0;
+        left: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+
+    .we-do-img {
+        position: unset;
+    }
+
+    .we-do-img img {
+        position: unset;
+        top: 0px;
+        left: 0px;
+    }
+
+    .work-nav ul {
+        display: block;
+    }
+
+    .work-nav ul li {
+        text-align: center;
+    }
+
+    .ribon-area h1 {
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .ribon-area .our-btn {
+        max-width: 250px;
+        left: 46.5%;
+        transform: translateX(-50);
+        -webkit-transform: translateX(-50);
+        -moz-transform: translateX(-50);
+        -ms-transform: translateX(-50);
+        -o-transform: translateX(-50);
+    }
+
+    .about-content .about-text {
+        text-align: center;
+    }
+
+    .sec-title>* {
+        text-align: center;
+    }
+
+    .widget-center {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .widget-one {
+        padding: 100px 0 !important;
+    }
+
+    .widget-one::before {
+        right: 0;
+        left: 0;
+    }
+
+    .widget {
+        text-align: center !important;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #bbb5;
+    }
+
+    form.searchBox {
+        left: 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .tab-content-text h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .tab-content-area {
+        padding: 30px;
+    }
+
+    .tab-content-text p {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .do-part {
+        padding: 30px;
+    }
+
+    .work-nav ul li::after {
+        display: none;
+    }
+
+    .group-btn {
+        width: 100%;
+        margin-left: -5%;
+    }
+
+}
